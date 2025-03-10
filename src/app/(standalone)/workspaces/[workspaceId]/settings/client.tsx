@@ -16,7 +16,7 @@ export const WorkspaceIdSettingsClient = () => {
   }
 
   if (!initialValues) {
-    return <PageError message="Workspace not found." />;
+    return <PageError message="Client not found." />;
   }
 
   return (

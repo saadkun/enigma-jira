@@ -48,7 +48,7 @@ export const EditWorkspaceForm = ({
     useResetInviteCode();
 
   const [DeleteDialog, confirmDelete] = useConfirm(
-    "Delete Workspace",
+    "Delete Client",
     "This action cannot be undone.",
     "destructive"
   );
@@ -150,7 +150,7 @@ export const EditWorkspaceForm = ({
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Workspace Name</FormLabel>
+                      <FormLabel>Client Name</FormLabel>
                       <FormControl>
                         <Input placeholder="Enter workspace name" {...field} />
                       </FormControl>
@@ -185,7 +185,7 @@ export const EditWorkspaceForm = ({
                           </Avatar>
                         )}
                         <div className="flex flex-col">
-                          <p className="text-sm">Workspace Icon</p>
+                          <p className="text-sm">Client Icon</p>
                           <p className="text-sm text-muted-foreground">
                             JPG, PNG, SVG or JPEG, max 1MB
                           </p>
@@ -301,7 +301,7 @@ export const EditWorkspaceForm = ({
               disabled={isPending || isDeletingWorkspace}
               onClick={handleDelete}
             >
-              Delete Workspace
+              Delete Client
             </Button>
           </div>
         </CardContent>

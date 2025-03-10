@@ -44,7 +44,7 @@ export const EditProjectForm = ({
     useDeleteProject();
 
   const [DeleteDialog, confirmDelete] = useConfirm(
-    "Delete Workspace",
+    "Delete Client",
     "This action cannot be undone.",
     "destructive"
   );

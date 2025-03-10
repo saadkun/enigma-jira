@@ -72,7 +72,7 @@ export const JoinWorkspaceForm = ({
             onClick={onSubmit}
             disabled={isPending}
           >
-            Join Workspace
+            Join Client
           </Button>
         </div>
       </CardContent>
